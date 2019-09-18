@@ -15,7 +15,7 @@ import (
 	ibc "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/ibc"
 	params "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/params/types"
 	slashing "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/slashing"
-	staking "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/staking/types"
+	staking "github.com/qqqzhch/amino-js/go/lib/cosmos/cosmos-sdk/x/staking/types"
 
 	tm_crypto "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto"
 	tm_ed25519 "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/ed25519"
@@ -107,7 +107,7 @@ func RegisterCodec(codec *amino.Codec) {
 
 	codec.RegisterConcrete(staking.MsgCreateValidator{}, CosmosSdkMsgCreateValidator, nil)
 	codec.RegisterConcrete(staking.MsgEditValidator{},   CosmosSdkMsgEditValidator, nil)
-	codec.RegisterConcrete(staking.MsgDelegate{},        CosmosSdkMsgDelegate, nil)
+	// codec.RegisterConcrete(staking.MsgDelegate{},        CosmosSdkMsgDelegate, nil)
 	codec.RegisterConcrete(staking.MsgUndelegate{},      CosmosSdkMsgUndelegate, nil)
 	codec.RegisterConcrete(staking.MsgBeginRedelegate{}, CosmosSdkMsgBeginRedelegate, nil)
 
@@ -218,5 +218,5 @@ func RegisterCodec(codec *amino.Codec) {
 	codec.RegisterConcrete(tm_types.MockRandomGoodEvidence{}, TendermintMockRandomGoodEvidence, nil)
 	codec.RegisterConcrete(tm_types.MockBadEvidence{},        TendermintMockBadEvidence, nil)
 	// @formatter:on
-	codec.RegisterConcrete(MsgDelegate{}, lambdaMsgDelegate, nil)
+	codec.RegisterConcrete(staking.MsgDelegate, lambdaMsgDelegate, nil)
 }
