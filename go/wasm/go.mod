@@ -1,4 +1,4 @@
-module github.com/cosmos/amino-js/go/wasm
+module github.com/qqqzhch/amino-js/go/wasm
 
 go 1.12
 

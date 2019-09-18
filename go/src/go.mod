@@ -1,4 +1,4 @@
-module github.com/cosmos/amino-js/go/src
+module github.com/qqqzhch/amino-js/go/src
 
 go 1.12
 

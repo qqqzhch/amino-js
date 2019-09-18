@@ -1,4 +1,4 @@
-module github.com/cosmos/amino-js/go/test
+module github.com/qqqzhch/amino-js/go/test
 
 go 1.12
 

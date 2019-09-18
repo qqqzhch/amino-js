@@ -16,7 +16,7 @@ import (
 	params "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/params/types"
 	slashing "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/x/slashing"
 	staking "github.com/qqqzhch/amino-js/go/lib/cosmos/cosmos-sdk/x/staking/types"
-
+	        
 	tm_crypto "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto"
 	tm_ed25519 "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/ed25519"
 	tm_multisig "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/crypto/multisig"
