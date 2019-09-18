@@ -87,4 +87,5 @@ const (
 	TendermintMockGoodEvidence                   = "tendermint/MockGoodEvidence"
 	TendermintMockRandomGoodEvidence             = "tendermint/MockRandomGoodEvidence"
 	TendermintMockBadEvidence                    = "tendermint/MockBadEvidence"
+	lambdaMsgDelegate                            = "lambda/MsgDelegate"
 )
