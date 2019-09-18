@@ -1,4 +1,4 @@
-package types
+package lib
 
 import (
 	sdk "github.com/cosmos/amino-js/go/lib/cosmos/cosmos-sdk/types"
