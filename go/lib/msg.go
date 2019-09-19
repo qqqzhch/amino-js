@@ -20,7 +20,7 @@ type MsgDelegate struct {
 	DelegatorAddress sdk.AccAddress `json:"delegator_address"`
 	ValidatorAddress sdk.ValAddress `json:"validator_address"`
 	Amount           sdk.Coin       `json:"amount"`
-	ValidatorType    *sdk.Int       `json:"validator_type"`
+	ValidatorType    ValidatorType   `json:"validator_type"`
 }
 
 type MsgBeginRedelegate struct {
