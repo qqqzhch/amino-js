@@ -30,7 +30,7 @@ import (
 	tm_pex "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/p2p/pex"
 	tm_privval "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/privval"
 	tm_types "github.com/cosmos/amino-js/go/lib/tendermint/tendermint/types"
-	lamb_types "github.com/LambdaIM/lambda/x/staking/types"
+	
 
 	amino "github.com/tendermint/go-amino"
 )
@@ -219,5 +219,5 @@ func RegisterCodec(codec *amino.Codec) {
 	codec.RegisterConcrete(tm_types.MockRandomGoodEvidence{}, TendermintMockRandomGoodEvidence, nil)
 	codec.RegisterConcrete(tm_types.MockBadEvidence{},        TendermintMockBadEvidence, nil)
 	// @formatter:on
-	codec.RegisterConcrete(lamb_types.MsgDelegate{}, lambdaMsgDelegate, nil)
+	//codec.RegisterConcrete(lamb_types.MsgDelegate{}, lambdaMsgDelegate, nil)
 }
