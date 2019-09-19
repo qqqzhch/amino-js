@@ -219,5 +219,5 @@ func RegisterCodec(codec *amino.Codec) {
 	codec.RegisterConcrete(tm_types.MockRandomGoodEvidence{}, TendermintMockRandomGoodEvidence, nil)
 	codec.RegisterConcrete(tm_types.MockBadEvidence{},        TendermintMockBadEvidence, nil)
 	// @formatter:on
-	//codec.RegisterConcrete(lamb_types.MsgDelegate{}, lambdaMsgDelegate, nil)
+	codec.RegisterConcrete(MsgDelegate{}, lambdaMsgDelegate, nil)
 }
